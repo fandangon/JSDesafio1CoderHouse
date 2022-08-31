@@ -1,3 +1,13 @@
+//Comienza el juego dando la bienvenida y preguntando si queremos comenzar, si no es así sale. 
+alert("Bienvenidos al juego donde debes adivinar el número, en este test aplicamos funciones, bucles y condicionales");
+let mensaje = prompt("Quieres comenzar? (si/no)");
+//si el jugador elige si, la condición es true el llama a la función adivina y comienza el juego
+if(mensaje == 'si' || mensaje == 'SI') {
+  adivina();
+//si el jugador elige no la condición es false y sale del juego  
+}else if(mensaje == 'no' || mensaje == 'NO'){
+  alert("Vuelve pronto");
+}
 //comienzo de la función
 function adivina() {
   let numeroAleatorio = Math.floor(Math.random()* 5 +1);
@@ -22,13 +32,3 @@ function adivina() {
   }
 }
 //fin de la función
-//Comienza el juego dando la bienvenida y preguntando si queremos comenzar, si no es así sale. 
-alert("Bienvenidos al juego donde debes adivinar el número, en este test aplicamos funciones, bucles y condicionales");
-let mensaje = prompt("Quieres comenzar? (si/no)");
-//si el jugador elige si, la condición es true el llama a la función adivina y comienza el juego
-if(mensaje == 'si' || mensaje == 'SI') {
-  adivina();
-//si el jugador elige no la condición es false y sale del juego  
-}else if(mensaje == 'no' || mensaje == 'NO'){
-  alert("Vuelve pronto");
-}
