@@ -28,7 +28,7 @@ let mensaje = prompt("Quieres comenzar? (SI/NO)".toUpperCase());
 //si el jugador elige si, la condición es true el llama a la función adivina y comienza el juego
 if(mensaje == 'si') {
   adivina();
-//si el jugador elige no la condición es false y sale del juego  
+//si el jugador elige no, la condición es false y sale del juego  
 }else if(mensaje == 'no'){
   alert("Vuelve pronto");
 }
