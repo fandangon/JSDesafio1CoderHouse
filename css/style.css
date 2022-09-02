@@ -6,24 +6,18 @@
 body{
     background-color: #16474e;
 }
-h1{
+h1, p{
+    display: flex;
+    flex-direction: column;
     color: #ffff;
     font-family: sans-serif;
     text-align: center;
-    font-weight: 12px;
+    font-size: 1.5em;
     margin-top: 5px;
 }
-p{
-    color: #ffff;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 12px;
-    padding: 4px;
-    margin: 15px 15px 15px 15px;
-}
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     h1, h3, p{
     display: inline-block;
     text-align: center;
     }   
-}
+} */
