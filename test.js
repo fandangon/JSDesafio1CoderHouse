@@ -26,9 +26,9 @@ function adivina() {
 alert("Bienvenidos al juego donde debes adivinar el número, en este test aplicamos funciones, bucles y condicionales");
 let mensaje = prompt("Quieres comenzar? (SI/NO)");
 //si el jugador elige si, la condición es true y llama a la función adivina y comienza el juego
-if(mensaje == 'si') {
+if(mensaje.toLowerCase() == 'si') {
   adivina();
 //si el jugador elige no, la condición es false y sale del juego  
-}else if(mensaje == 'no'){
+}else if(mensaje.toLowerCase() == 'no'){
   alert("Vuelve pronto");
 }
