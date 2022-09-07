@@ -32,4 +32,3 @@ if(mensaje.toLowerCase() == 'si') {
 }if(mensaje.toLowerCase() == 'no'){
   alert("Vuelve pronto");
 }
-  
