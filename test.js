@@ -11,15 +11,13 @@ function adivina() {
     } else if (numeroAleatorio < num) {
       alert("Intenta un numero mas bajo");
     }
-    num = parseInt(
-      prompt(`Ingrese un número del 1 al 5 (quedan ${intentos} intentos)`)
-    );
+    num = parseInt(prompt(`Ingrese un número del 1 al 5 (quedan ${intentos} intentos)`));
     console.log(`El numero elegido es: ${num}`);
     //Salimos del bucle si no nos quedan mas intentos o acertamos el número
   } while (numeroAleatorio != num && --intentos > 0);
-  if(numeroAleatorio == num) {
+  if (numeroAleatorio == num) {
     alert("Has acertado el número!");
-  }else{
+  } else {
     alert("Has perdido");
   }
 }
@@ -30,17 +28,17 @@ function jugar() {
     "Bienvenidos al juego donde debes adivinar el número, en este test aplicamos funciones, bucles y condicionales"
   );
   let validator = true;
-  while(validator) {
+  while (validator) {
     let mensaje = prompt("Quieres comenzar? (SI/NO)");
     //si el jugador elige si, la condición es true y llama a la función adivina y comienza el juego
-    if(mensaje.toLowerCase() == "si") {
+    if (mensaje.toLowerCase() == "si") {
       validator = false;
       adivina();
       //si el jugador elige no, la condición es false y sale del juego
-    }else if(mensaje.toLowerCase() == "no") {
+    } else if (mensaje.toLowerCase() == "no") {
       alert("Vuelve pronto");
-      break;
-    }else{
+      validator = false;
+    } else {
       alert("Ingreso un dato incorrecto");
     }
   }
